@@ -1,0 +1,37 @@
+{
+    "userEmail": {
+        "emailCadastrado": "desafiocwi@reset.com3",
+        "emailNaoCadastrado": "email@nao.cadastrado",
+        "emailForaDoPadrao": "email@mail",
+        "emailEmBranco": "",
+        "emailSecundario": "aliasmail@test.com3"
+    },
+    "userPassword": {
+        "passwordCadastrado": "desafiocwi",
+        "passwordNaoCadastrado": "desafio",
+        "passwordForaDoPadrao": "123",
+        "passwordEmBranco": ""
+    },
+    "birthDate": {
+        "validDate": {
+            "day": "15",
+            "month": "November",
+            "year": "1989"
+        },
+        "invalidDate": {
+            "day": "1",
+            "month": "amarelo",
+            "year": "0000"
+        }
+    },
+    "userAddress": {
+        "endereco": "Rua abc, numero 1",
+        "cidade": "TestCity",
+        "estado": "Alabama",
+        "cep": "12345",
+        "pais": "United States",
+        "celular": "51999999999"        
+    },
+    "userFirstName": "Anderson",
+    "userLastName": "Martins"
+}
