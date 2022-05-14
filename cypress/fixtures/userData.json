@@ -1,10 +1,10 @@
 {
     "userEmail": {
-        "emailCadastrado": "desafiocwi@reset.com3",
+        "emailCadastrado": "desafiocwi@reset.com4",
         "emailNaoCadastrado": "email@nao.cadastrado",
         "emailForaDoPadrao": "email@mail",
         "emailEmBranco": "",
-        "emailSecundario": "aliasmail@test.com3"
+        "emailSecundario": "aliasmail@test.com4"
     },
     "userPassword": {
         "passwordCadastrado": "desafiocwi",

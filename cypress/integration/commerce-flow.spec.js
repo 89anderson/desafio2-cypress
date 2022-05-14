@@ -10,15 +10,10 @@ import {
 
 import userData from '../fixtures/userData.json';
 
-describe('Fluxos do ecommerce', () => {
-    categoryPage.CATEGORIES.forEach(category => {
-        it.skip(`acessar categoria ${category}`, () => {
-            homePage.acessarCategoria(category);
-            categoryPage.validarAcessoACategoria(category)
-        });
-    });
 
-    it('Criar cadastro de usuário', () => {
+describe('Fluxos do ecommerce', () => {
+
+    it('Validando cadastro de usuário', () => {
         homePage.acessarLogin()
         loginPage.preencherEmailDeCriacaoDeConta(userData.userEmail.emailCadastrado)
         loginPage.clickarBotaoCadastrar()
@@ -40,10 +35,17 @@ describe('Fluxos do ecommerce', () => {
         createAccountPage.preecherEmailSecundario(userData.userEmail.emailSecundario)
         createAccountPage.clickRegister()
         myAccountPage.validarLoginRealizadoComSucesso(`${userData.userFirstName} ${userData.userLastName}`)
-
-
+    
     });
 
+    categoryPage.CATEGORIES.forEach(category => {
+        it.skip(`acessar categoria ${category}`, () => {
+            homePage.acessarCategoria(category);
+            categoryPage.validarAcessoACategoria(category)
+        });
+    });
+
+    
     it.skip('realizar login', () => {
         homePage.acessarLogin();
         loginPage.preencherLogin();
